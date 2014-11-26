@@ -17,6 +17,6 @@ tbtx static server
 
 6. 修改.flex-combo目录下的.flex-combo.json，在urls里加入一条
 
-    "/tbtx": "E:\\tbcdn"
+    "/tbtx": "E:\\\\tbcdn"
 
 7. 可以在根目录新建一个settings.js, 或者拷贝settings.example.js文件来修改端口配置
