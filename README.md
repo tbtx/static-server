@@ -20,3 +20,7 @@ tbtx static server
     "/tbtx": "E:\\\\tbcdn"
 
 7. 可以在根目录新建一个settings.js, 或者拷贝settings.example.js文件来修改端口配置
+
+8. 在.flex-combo的urls里将static.tianxia.taobao.com的线上地址加上
+
+    "static.tianxia.taobao.com": "223.6.248.150"

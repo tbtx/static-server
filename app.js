@@ -1,7 +1,11 @@
 var http = require("http");
 var FlexCombo = require("flex-combo/api");
 
-var settings = require("./settings");
+try {
+    var settings = require("./settings");
+} catch(e) {
+    var settings = {};
+}
 
 
 var instance = new FlexCombo();
