@@ -24,3 +24,18 @@ tbtx static server
 8. 在.flex-combo的urls里将static.tianxia.taobao.com的线上地址加上
 
     "static.tianxia.taobao.com": "223.6.248.150"
+
+## nginx配置
+
+比如combo服务跑在9000端口,注意不要用http://127.0.0.1:9000/这样最后带反斜杠的地址，否则会有问题
+
+    server {
+        listen 80;
+        server_name static.tianxia.taobao.com;
+        location ^~ /tbtx/ {
+            proxy_pass http://127.0.0.1:9000;
+        }
+        location / {
+            proxy_pass http://223.6.248.150;
+        }
+    }
