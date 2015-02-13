@@ -39,3 +39,9 @@ tbtx static server
             proxy_pass http://223.6.248.150;
         }
     }
+
+
+## bug
+
+    // 帮flex-combo找出了个bug，node下path.join会将/重新变成\\
+    pathLib.join(base, i).replace(/\\|\/{1,}/g, '/');
