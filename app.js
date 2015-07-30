@@ -7,7 +7,7 @@ try {
     var settings = {};
 }
 
-var instance = FlexCombo({}, ".flex-combo");
+var instance = FlexCombo(settings, ".flex-combo");
 var port = settings.port || 80;
 
 http.createServer(function(req, res) {
